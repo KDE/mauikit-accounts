@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+description: MauiKit QtQuick plugins for text editing
+maintainer: camiloh
+type: functional
+platforms:
+    - name: Linux
+public_lib: true
+deprecated: false
+release: false
