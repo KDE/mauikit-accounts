@@ -18,7 +18,7 @@ set(CMAKE_AUTORCC ON)
 
 set(AUTOMOC_MOC_OPTIONS -Muri=org.mauikit.accounts)
 
-project(MauiKitAccounts LANGUAGES CXX VERSION 2.0.0)
+project(Accounts LANGUAGES CXX VERSION 2.0.0)
 
 find_package(ECM ${KF5_VERSION} NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
@@ -58,25 +58,25 @@ install(FILES
         NAMESPACE MauiKit::)
         
 ecm_setup_version(${PROJECT_VERSION}
-    VARIABLE_PREFIX MauiKitAccounts
-    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mauikitaccounts_version.h"
+    VARIABLE_PREFIX Accounts
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/MauiKitAccountsConfigVersion.cmake"
     SOVERSION 1
 )
 
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/mauikitaccounts_version.h"
-    DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF5}"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/MauiKit/Accounts
     COMPONENT Devel)
 
 if(ANDROID)
     find_package(Qt5 REQUIRED COMPONENTS AndroidExtras)
     find_package(Gradle REQUIRED)
 elseif(UNIX)
-    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS Config KIO)
+    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS Config)
 endif()
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} COMPONENTS Core Quick Sql Concurrent Network REQUIRED)
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons #[[FileMetaData]])
+find_package(Qt5 ${REQUIRED_QT_VERSION} COMPONENTS Core Quick Sql Network REQUIRED)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(MauiKit)
     
 add_subdirectory(src)

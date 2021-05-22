@@ -2,16 +2,16 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-ecm_create_qm_loader(mauikitaccounts_QM_LOADER libmauikitaccountsplugin_qt)
+ecm_create_qm_loader(accounts_QM_LOADER libaccountsplugin_qt)
 
 set(
     sources
-    code/mauikitaccounts_plugin.cpp   
+    code/accounts_plugin.cpp
     code/mauiaccounts.cpp
     code/accountsdb.cpp
     code/accounts.qrc
     resources.qrc
-    ${mauikitaccounts_QM_LOADER}
+    ${accounts_QM_LOADER}
 )
 
 set(
@@ -36,11 +36,11 @@ add_library(
 
 add_library(MauiKit::Accounts ALIAS MauiKitAccounts)
 
-generate_export_header(MauiKitAccounts BASE_NAME MauiKitAccounts)
+generate_export_header(MauiKitAccounts BASE_NAME Accounts)
 set_target_properties(MauiKitAccounts PROPERTIES
-    VERSION ${MauiKitAccounts_VERSION_STRING}
-    SOVERSION ${MauiKitAccounts_SOVERSION}
-    EXPORT_NAME MauiKitAccounts
+    VERSION ${Accounts_VERSION_STRING}
+    SOVERSION ${Accounts_SOVERSION}
+    EXPORT_NAME Accounts
 )
     
 target_include_directories(MauiKitAccounts
@@ -57,8 +57,6 @@ elseif(UNIX)
 
         PRIVATE
         KF5::ConfigCore
-        KF5::KIOCore
-        KF5::KIOFileWidgets
         )
 endif()
 
@@ -70,7 +68,6 @@ target_link_libraries(
         Qt5::Quick
         Qt5::Qml
         Qt5::Sql
-        Qt5::Concurrent
         Qt5::Network
         KF5::I18n
         MauiKit
@@ -80,7 +77,7 @@ install(TARGETS MauiKitAccounts EXPORT MauiKitAccountsTargets ${KDE_INSTALL_TARG
 
 install(FILES
     ${headers} 
-    ${CMAKE_CURRENT_BINARY_DIR}/mauikitaccounts_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/accounts_export.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/MauiKit/Accounts
     COMPONENT Devel)
 

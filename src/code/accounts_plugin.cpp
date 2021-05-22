@@ -5,11 +5,11 @@
 #include <QQmlEngine>
 #include <QResource>
 
-#include "mauikitaccounts_plugin.h"
+#include "accounts_plugin.h"
 
 #include "mauiaccounts.h"
 
-void MauiKitAccountsPlugin::registerTypes(const char *uri)
+void AccountsPlugin::registerTypes(const char *uri)
 {
 #if defined(Q_OS_ANDROID)
     QResource::registerResource(QStringLiteral("assets:/android_rcc_bundle.rcc"));
@@ -22,11 +22,3 @@ void MauiKitAccountsPlugin::registerTypes(const char *uri)
     qmlRegisterType(resolveFileUrl(QStringLiteral("CredentialDialog.qml")), uri, 1, 0, "CredentialDialog"); 
 }
 
-void MauiKitAccountsPlugin::initializeEngine(QQmlEngine *engine, const char *uri)
-{
-    Q_UNUSED(engine);
-    Q_UNUSED(uri);
-    
-    /** IMAGE PROVIDERS **/
-//     engine->addImageProvider("thumbnailer", new Thumbnailer());
-}
