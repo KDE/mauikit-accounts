@@ -28,11 +28,11 @@
  * This properties and functions are exposed to
  * all the Maui Applications that might want to use the accounts
  */
-#include "mauikitaccounts_export.h"
+#include "accounts_export.h"
 
 class AccountsDB;
 
-class MAUIKITACCOUNTS_EXPORT MauiAccounts : public MauiList
+class ACCOUNTS_EXPORT MauiAccounts : public MauiList
 {
     Q_OBJECT
     Q_PROPERTY(int currentAccountIndex READ getCurrentAccountIndex WRITE setCurrentAccountIndex NOTIFY currentAccountIndexChanged)
