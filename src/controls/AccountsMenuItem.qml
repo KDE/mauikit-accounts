@@ -17,7 +17,7 @@
    *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
    */
   
-    
+  
   import QtQuick 2.14
   
   import QtQuick.Controls 2.14
@@ -31,11 +31,16 @@
   {
       implicitHeight: _accountLayout.implicitHeight + Maui.Style.space.medium
       
+      MA.AccountsDialog
+      {
+          id: _accountsDialog
+      }
+      
       ColumnLayout
       {
           id: _accountLayout
-         width: parent.width * 0.9
-         anchors.centerIn: parent
+          width: parent.width * 0.9
+          anchors.centerIn: parent
           spacing: Maui.Style.space.medium
           
           Repeater
@@ -60,8 +65,8 @@
                   
                   label1.text: model.user
                   label2.text: model.server
-               
-               onClicked: MA.Accounts.currentAccountIndex = index
+                  
+                  onClicked: MA.Accounts.currentAccountIndex = index
               }
               
               Component.onCompleted:
@@ -80,10 +85,10 @@
               icon.name: "list-add-user"
               onClicked:
               {
-                      MA.AccountsDialog.open()                      
-//                       menuBtn.menu.close()
+                 _accountsDialog.open()                      
               }
           }
       }
   }
+  
   

@@ -60,7 +60,7 @@ Maui.Dialog
 
         onRejected:
         {
-            var account = Maui.App.accounts.get(_listView.currentIndex)
+            var account = MA.Accounts.get(_listView.currentIndex)
             console.log(account.label)
             control.removeAccount(account.server, account.user)
             close()
@@ -72,7 +72,7 @@ Maui.Dialog
             text: i18n("Delete Account and Files")
             onClicked:
             {
-                var account = Maui.App.accounts.get(_listView.currentIndex)
+                var account = MA.Accounts.get(_listView.currentIndex)
                 control.removeAccountAndFiles(account.server, account.user)
                 close()
             }
@@ -100,7 +100,7 @@ Maui.Dialog
         model: Maui.BaseModel
         {
             id: _syncingModel
-            list: Maui.App.accounts
+            list: MA.Accounts
         }
 
         delegate: Maui.ListDelegate
@@ -146,18 +146,18 @@ Maui.Dialog
     function addAccount(server, user, password)
     {
         if(user.length)
-            Maui.App.accounts.registerAccount({server: server, user: user, password: password})
+            MA.Accounts.registerAccount({server: server, user: user, password: password})
     }
 
     function removeAccount(server, user)
     {
         if(server.length && user.length)
-            Maui.App.accounts.removeAccount(server, user)
+              MA.Accounts.removeAccount(server, user)
     }
 
     function removeAccountAndFiles(server, user)
     {
         if(server.length && user.length)
-            Maui.App.accounts.removeAccountAndFiles(server, user)
+             MA.Accounts.removeAccountAndFiles(server, user)
     }
 }
