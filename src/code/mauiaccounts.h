@@ -20,6 +20,7 @@
 #define MAUIACCOUNTS_H
 
 #include <MauiKit/Core/mauilist.h>
+#include "accounts_export.h"
 
 /**
  * MauiAccounts
@@ -28,15 +29,12 @@
  * This properties and functions are exposed to
  * all the Maui Applications that might want to use the accounts
  */
-#include "accounts_export.h"
 
 class AccountsDB;
-
 class ACCOUNTS_EXPORT MauiAccounts : public MauiList
 {
     Q_OBJECT
     Q_PROPERTY(int currentAccountIndex READ getCurrentAccountIndex WRITE setCurrentAccountIndex NOTIFY currentAccountIndexChanged)
-
     Q_PROPERTY(QVariantMap currentAccount READ getCurrentAccount NOTIFY currentAccountChanged)
 
 public:
@@ -134,8 +132,6 @@ private:
     QVariantMap m_currentAccount;
 
     int m_currentAccountIndex = -1;
-    uint m_count = 0;
-
     void setAccounts();
 
     bool addCloudAccount(const QString &server, const QString &user, const QString &password);

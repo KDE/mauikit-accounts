@@ -46,7 +46,6 @@ void MauiAccounts::setAccounts()
     this->m_data = this->getCloudAccounts();
     qDebug() << "ACCOUNTS LIST" << this->m_data;
 
-    this->m_count = this->m_data.count();
     emit this->countChanged();
     emit this->postListChanged();
 }
@@ -156,13 +155,6 @@ void MauiAccounts::setCurrentAccountIndex(const int &index)
     emit this->currentAccountIndexChanged(this->m_currentAccountIndex);
 }
 
-QVariantMap MauiAccounts::get(const int &index) const
-{
-    if (index >= this->m_data.size() || index < 0)
-        return QVariantMap();
-    return FMH::toMap(this->m_data.at(index));
-}
-
 QVariantList MauiAccounts::getCloudAccountsList()
 {
     QVariantList res;
@@ -172,11 +164,6 @@ QVariantList MauiAccounts::getCloudAccountsList()
         res << FMH::toMap(item);
 
     return res;
-}
-
-uint MauiAccounts::getCount() const
-{
-    return this->m_count;
 }
 
 void MauiAccounts::refresh()
