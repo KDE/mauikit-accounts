@@ -1,12 +1,9 @@
-mauikit/
-3rdparty/kirigami/
-3rdparty/breeze-icons/
 .directory
 
 *.*~
 ~*.*
 ~.*
-*.DS_Store 
+*.DS_Store
 
 # C++ objects and libs
 *.slo
@@ -54,4 +51,7 @@ CMakeLists.txt.user*
 
 # build folders and output
 build/
-vvave
+*.kdev4
+*.*~
+*.travis*
+*.kate-swp
