@@ -134,8 +134,8 @@ Maui.Dialog
         Maui.Holder
         {
             visible: _listView.count == 0
+            anchors.fill: parent
             isMask: true
-            isGif: false
             emojiSize: Maui.Style.iconSizes.huge
             emoji: "qrc:/assets/dialog-information.svg"
             title: i18n("No accounts yet!")
