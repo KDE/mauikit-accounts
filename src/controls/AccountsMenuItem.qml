@@ -39,8 +39,8 @@
       ColumnLayout
       {
           id: _accountLayout
-          width: parent.width * 0.9
-          anchors.centerIn: parent
+          anchors.fill: parent
+          anchors.margins: Maui.Style.space.medium
           spacing: Maui.Style.space.medium
           
           Repeater
