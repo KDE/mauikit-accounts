@@ -109,7 +109,6 @@ Maui.Dialog
             width: ListView.view.width
             label: model.label
             label2: model.server
-            template.label2.elide: Text.ElideMiddle
 
             radius: Maui.Style.radiusV
 

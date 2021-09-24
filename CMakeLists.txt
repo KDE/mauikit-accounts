@@ -18,7 +18,7 @@ set(CMAKE_AUTORCC ON)
 
 set(AUTOMOC_MOC_OPTIONS -Muri=org.mauikit.accounts)
 
-project(Accounts LANGUAGES CXX VERSION 2.0.1)
+project(Accounts LANGUAGES CXX VERSION 2.1.0)
 
 find_package(ECM ${KF5_VERSION} NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})

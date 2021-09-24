@@ -64,7 +64,7 @@
                   iconSizeHint: Maui.Style.iconSizes.medium
                   
                   label1.text: model.user
-                  label2.text: model.server
+//                   label2.text: model.server
                   
                   onClicked: MA.Accounts.currentAccountIndex = index
               }
