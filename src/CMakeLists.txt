@@ -10,7 +10,6 @@ set(
     code/mauiaccounts.cpp
     code/accountsdb.cpp
     code/accounts.qrc
-    resources.qrc
     ${accounts_QM_LOADER}
 )
 
@@ -25,13 +24,19 @@ set(
     controls/qmldir
 )
 
+if(QUICK_COMPILER)
+    qtquick_compiler_add_resources(accounts_QML_QRC resources.qrc)
+else()
+    qt5_add_resources(accounts_QML_QRC resources.qrc)
+endif()
+
 ecm_generate_qmltypes(org.mauikit.accounts ${PROJECT_VERSION}
                       DESTINATION ${KDE_INSTALL_QMLDIR}/org/mauikit/accounts)
 
 add_library(
     MauiKitAccounts
     SHARED
-    ${sources} ${pluginData}
+    ${sources} ${pluginData} ${accounts_QML_QRC}
 )
 
 add_library(MauiKit::Accounts ALIAS MauiKitAccounts)

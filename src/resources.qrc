@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: (C) 2020 Carl Schwan <carl@carlschwan.eu>
 SPDX-License-Identifier: LGPL-2.1-or-later
 -->
 <RCC>
-  <qresource prefix="/">
+  <qresource prefix="/mauikit/accounts">
       <file alias="AccountsDialog.qml">controls/AccountsDialog.qml</file>
       <file alias="CredentialsDialog.qml">controls/CredentialsDialog.qml</file>      
       <file alias="AccountsMenuItem.qml">controls/AccountsMenuItem.qml</file>      

@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.16)
 
 set(KF5_VERSION "5.70.0")
 set(REQUIRED_QT_VERSION 5.15.0)
@@ -22,6 +22,8 @@ project(Accounts LANGUAGES CXX VERSION 2.1.0)
 
 find_package(ECM ${KF5_VERSION} NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
+
+option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
 
 include(GenerateExportHeader)
 include(GNUInstallDirs)
@@ -78,6 +80,14 @@ endif()
 find_package(Qt5 ${REQUIRED_QT_VERSION} COMPONENTS Core Quick Sql Network REQUIRED)
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(MauiKit)
+
+if(QUICK_COMPILER)
+        find_package(Qt5QuickCompiler)
+        set_package_properties(Qt5QuickCompiler PROPERTIES
+                DESCRIPTION "Compile QML at build time"
+                TYPE OPTIONAL
+        )
+endif()
     
 add_subdirectory(src)
 
