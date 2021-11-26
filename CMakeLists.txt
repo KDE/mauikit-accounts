@@ -18,7 +18,7 @@ set(CMAKE_AUTORCC ON)
 
 set(AUTOMOC_MOC_OPTIONS -Muri=org.mauikit.accounts)
 
-project(Accounts LANGUAGES CXX VERSION 2.1.0)
+project(Accounts LANGUAGES CXX VERSION 2.1.1)
 
 find_package(ECM ${KF5_VERSION} NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
@@ -63,7 +63,7 @@ ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX Accounts
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/MauiKitAccountsConfigVersion.cmake"
-    SOVERSION 1
+    SOVERSION ${PROJECT_VERSION_MAJOR}
 )
 
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
