@@ -110,16 +110,15 @@ Maui.Dialog
         id: userField
         Layout.fillWidth: true
         placeholderText: i18n("Username")
+        icon.source: "im-user"
         inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhSensitiveData
     }
 
-    Maui.TextField
+    Maui.PasswordField
     {
         id: passwordField
         Layout.fillWidth: true
-        placeholderText: i18n("Password")
-        echoMode: TextInput.Password
-        passwordMaskDelay: 300
+        placeholderText: i18n("Password")       
         inputMethodHints: Qt.ImhNoAutoUppercase
     }
 
@@ -127,6 +126,7 @@ Maui.Dialog
     {
         id: serverField
         visible: customServer
+        icon.source: "link"
         Layout.fillWidth: true
         placeholderText: i18n("Server address")
         inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase
