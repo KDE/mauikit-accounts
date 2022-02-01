@@ -15,6 +15,7 @@ Maui.Dialog
     maxWidth: maxHeight
     footBar.visible: false
     page.title: i18n("Accounts")
+    page.showTitle: false
 
     /**
       *
@@ -37,7 +38,7 @@ Maui.Dialog
     }
 
     rejectButton.visible: false
-    acceptButton.text: i18n("Add account...")
+    acceptButton.text: i18n("Add")
     onAccepted: _syncDialog.open()
 
     headBar.rightContent: ToolButton
@@ -135,7 +136,6 @@ Maui.Dialog
             visible: _listView.count == 0
             anchors.fill: parent
             isMask: true
-            emojiSize: Maui.Style.iconSizes.huge
             emoji: "qrc:/assets/dialog-information.svg"
             title: i18n("No accounts yet!")
             body: i18n("Start adding new accounts to sync your files, music, contacts, images, notes, etc...")

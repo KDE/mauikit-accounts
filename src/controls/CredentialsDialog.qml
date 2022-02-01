@@ -37,11 +37,12 @@ Maui.Dialog
 {
     id: control
 
-    acceptButton.text: i18n("Sign In")
+    acceptButton.text: i18n("Sign in")
     rejectButton.text: i18n("Cancel")
     rejectButton.visible: false
     page.margins: Maui.Style.space.medium
     page.title: i18n("New Account")
+    page.showTitle: false
     spacing: Maui.Style.space.medium
 
     /**
