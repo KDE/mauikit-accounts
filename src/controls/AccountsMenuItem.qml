@@ -23,7 +23,6 @@
   import QtQuick.Controls 2.14
   import QtQuick.Layouts 1.3
   
-  import org.kde.kirigami 2.8 as Kirigami 
   import org.mauikit.controls 1.3 as Maui 
   import org.mauikit.accounts 1.0 as MA
   
@@ -57,7 +56,7 @@
                   Layout.fillWidth: true
                   height: Maui.Style.rowHeight * 1.2
                   
-                  Kirigami.Theme.backgroundColor: "transparent"
+                  Maui.Theme.backgroundColor: "transparent"
                   
                   isCurrentItem: MA.Accounts.currentAccountIndex === index
                   iconSource: "amarok_artist"
@@ -78,7 +77,6 @@
           
           Button
           {
-              Layout.preferredHeight: implicitHeight
               Layout.alignment: Qt.AlignCenter
               Layout.fillWidth: true
               text: i18n("Accounts")
