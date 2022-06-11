@@ -66,7 +66,7 @@ Maui.Dialog
     property alias passwordField: passwordField
 
     footBar.visible: false
-    maxHeight: 350
+//     maxHeight: 350
     maxWidth: 350
 
     actions: Action

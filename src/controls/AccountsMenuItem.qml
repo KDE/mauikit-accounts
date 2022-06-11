@@ -26,20 +26,22 @@
   import org.mauikit.controls 1.3 as Maui 
   import org.mauikit.accounts 1.0 as MA
   
-  Item
+  MenuItem
   {
-      implicitHeight: _accountLayout.implicitHeight + Maui.Style.space.medium
+      //implicitHeight: _accountLayout.implicitHeight + Maui.Style.space.medium
+      //width: ListView.view.width
       
       MA.AccountsDialog
       {
           id: _accountsDialog
       }
       
-      ColumnLayout
+      background: null
+      
+     contentItem: ColumnLayout
       {
           id: _accountLayout
-          anchors.fill: parent
-          anchors.margins: Maui.Style.space.medium
+         
           spacing: Maui.Style.space.medium
           
           Repeater
