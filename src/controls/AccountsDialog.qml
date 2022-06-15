@@ -125,7 +125,7 @@ Maui.Dialog
 
             onRightClicked:
             {
-                _listView.currentIndex = index
+                _listView.currentIndex = index                
                 _menu.popup()
             }
         }
