@@ -36,7 +36,7 @@
           id: _accountsDialog
       }
       
-      background: null
+      // background: null
       
      contentItem: ColumnLayout
       {
