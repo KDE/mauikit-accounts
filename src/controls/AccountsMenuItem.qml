@@ -53,19 +53,13 @@
                   list: MA.Accounts
               }
               
-              delegate: Maui.ListBrowserDelegate
+              delegate: MenuItem
               {
-                  Layout.fillWidth: true
-                  height: Maui.Style.rowHeight * 1.2
+                  Layout.fillWidth: true                  
                   
-                  Maui.Theme.backgroundColor: "transparent"
-                  
-                  isCurrentItem: MA.Accounts.currentAccountIndex === index
-                  iconSource: "amarok_artist"
-                  iconSizeHint: Maui.Style.iconSizes.medium
-                  
-                  label1.text: model.user
-//                   label2.text: model.server
+                  checked: MA.Accounts.currentAccountIndex === index
+                  icon.name: "amarok_artist"                  
+                  text: model.user
                   
                   onClicked: MA.Accounts.currentAccountIndex = index
               }
