@@ -2,15 +2,12 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-ecm_create_qm_loader(accounts_QM_LOADER libaccountsplugin_qt)
-
 set(
     sources
     code/accounts_plugin.cpp
     code/mauiaccounts.cpp
     code/accountsdb.cpp
     code/accounts.qrc
-    ${accounts_QM_LOADER}
 )
 
 set(
@@ -38,6 +35,8 @@ add_library(
     SHARED
     ${sources} ${pluginData} ${accounts_QML_QRC}
 )
+   
+   ecm_create_qm_loader(MauiKitAccounts MauiKitAccountsPlugin)
 
 add_library(MauiKit::Accounts ALIAS MauiKitAccounts)
 
@@ -74,7 +73,6 @@ target_link_libraries(
         Qt5::Qml
         Qt5::Sql
         Qt5::Network
-        KF5::I18n
         MauiKit
 )
 

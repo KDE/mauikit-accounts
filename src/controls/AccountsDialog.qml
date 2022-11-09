@@ -13,7 +13,7 @@ Maui.Dialog
     maxHeight: 350
     maxWidth: maxHeight
     footBar.visible: false
-    page.title: i18n("Accounts")
+    page.title: i18nd("mauikitaccounts","Accounts")
     page.showTitle: false
 
     /**
@@ -37,7 +37,7 @@ Maui.Dialog
     }
 
     rejectButton.visible: false
-    acceptButton.text: i18n("Add")
+    acceptButton.text: i18nd("mauikitaccounts","Add")
     onAccepted: _syncDialog.open()
 
     headBar.rightContent: ToolButton
@@ -51,11 +51,11 @@ Maui.Dialog
         id: _removeDialog
 
         maxWidth: 400
-        title: i18n("Remove Account")
-        message: i18n("Are you sure you want to remove this account?")
+        title: i18nd("mauikitaccounts","Remove Account")
+        message: i18nd("mauikitaccounts","Are you sure you want to remove this account?")
         page.margins: control.page.margins
 
-        rejectButton.text: i18n("Delete Account")
+        rejectButton.text: i18nd("mauikitaccounts","Delete Account")
         // 			rejectButton.visible: false
 
         onRejected:
@@ -69,7 +69,7 @@ Maui.Dialog
 
         footBar.rightContent: Button
         {
-            text: i18n("Delete Account and Files")
+            text: i18nd("mauikitaccounts","Delete Account and Files")
             onClicked:
             {
                 var account = MA.Accounts.get(_listView.currentIndex)
@@ -85,7 +85,7 @@ Maui.Dialog
 
         MenuItem
         {
-            text: i18n("Remove...")
+            text: i18nd("mauikitaccounts","Remove...")
             Maui.Theme.textColor: Maui.Theme.negativeTextColor
 
             onTriggered: _removeDialog.open()
@@ -136,8 +136,8 @@ Maui.Dialog
             anchors.fill: parent
             isMask: true
             emoji: "qrc:/assets/dialog-information.svg"
-            title: i18n("No accounts yet!")
-            body: i18n("Start adding new accounts to sync your files, music, contacts, images, notes, etc...")
+            title: i18nd("mauikitaccounts","No accounts yet!")
+            body: i18nd("mauikitaccounts","Start adding new accounts to sync your files, music, contacts, images, notes, etc...")
         }
     }
 

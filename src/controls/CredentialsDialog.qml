@@ -36,11 +36,11 @@ Maui.Dialog
 {
     id: control
 
-    acceptButton.text: i18n("Sign in")
-    rejectButton.text: i18n("Cancel")
+    acceptButton.text: i18nd("mauikitaccounts","Sign in")
+    rejectButton.text: i18nd("mauikitaccounts","Cancel")
     rejectButton.visible: false
     page.margins: Maui.Style.space.medium
-    page.title: i18n("New Account")
+    page.title: i18nd("mauikitaccounts","New Account")
     page.showTitle: false
     spacing: Maui.Style.space.medium
 
@@ -70,7 +70,7 @@ Maui.Dialog
 
     actions: Action
     {
-        text: i18n("Sign up")
+        text: i18nd("mauikitaccounts","Sign up")
         enabled: !customServer
         onTriggered: Qt.openUrlExternally("https://www.opendesktop.org/register")
     }
@@ -109,7 +109,7 @@ Maui.Dialog
     {
         id: userField
         Layout.fillWidth: true
-        placeholderText: i18n("Username")
+        placeholderText: i18nd("mauikitaccounts","Username")
         icon.source: "im-user"
         inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhSensitiveData
     }
@@ -118,7 +118,7 @@ Maui.Dialog
     {
         id: passwordField
         Layout.fillWidth: true
-        placeholderText: i18n("Password")       
+        placeholderText: i18nd("mauikitaccounts","Password")       
         inputMethodHints: Qt.ImhNoAutoUppercase
     }
 
@@ -128,7 +128,7 @@ Maui.Dialog
         visible: customServer
         icon.source: "link"
         Layout.fillWidth: true
-        placeholderText: i18n("Server address")
+        placeholderText: i18nd("mauikitaccounts","Server address")
         inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase
         text: customServer ? "" : "https://cloud.opendesktop.cc/cloud/remote.php/webdav/"
     }
@@ -137,7 +137,7 @@ Maui.Dialog
     {
         Layout.fillWidth: true
         icon.name: "filename-space-amarok"
-        text: customServer ? i18n("opendesktop") : i18n("Custom server")
+        text: customServer ? i18nd("mauikitaccounts","opendesktop") : i18nd("mauikitaccounts","Custom server")
         onClicked: customServer = !customServer
     }
 }

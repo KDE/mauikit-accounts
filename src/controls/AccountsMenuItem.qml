@@ -75,7 +75,7 @@
           {
               Layout.alignment: Qt.AlignCenter
               Layout.fillWidth: true
-              text: i18n("Accounts")
+              text: i18nd("mauikitaccounts","Accounts")
               icon.name: "list-add-user"
               onClicked:
               {
