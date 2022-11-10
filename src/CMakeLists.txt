@@ -73,6 +73,7 @@ target_link_libraries(
         Qt5::Qml
         Qt5::Sql
         Qt5::Network
+        KF5::I18n
         MauiKit
 )
 
