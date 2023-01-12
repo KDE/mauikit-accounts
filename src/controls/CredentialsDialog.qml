@@ -105,7 +105,7 @@ Maui.Dialog
         font.pointSize: Maui.Style.fontSizes.big
     }
 
-    Maui.TextField
+    TextField
     {
         id: userField
         Layout.fillWidth: true
@@ -122,7 +122,7 @@ Maui.Dialog
         inputMethodHints: Qt.ImhNoAutoUppercase
     }
 
-    Maui.TextField
+    TextField
     {
         id: serverField
         visible: customServer
