@@ -42,8 +42,8 @@
       {
           id: _accountLayout
          
-          spacing: Maui.Style.space.medium
-          
+         spacing: Maui.Style.defaultSpacing
+         
           Repeater
           {
               id: _accountsListing

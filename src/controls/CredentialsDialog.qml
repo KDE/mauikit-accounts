@@ -42,8 +42,8 @@ Maui.Dialog
     page.margins: Maui.Style.space.medium
     page.title: i18nd("mauikitaccounts","New Account")
     page.showTitle: false
-    spacing: Maui.Style.space.medium
-
+    spacing: Maui.Style.defaultSpacing
+    
     /**
       * customServer : bool
       */
