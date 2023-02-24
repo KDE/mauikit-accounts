@@ -30,7 +30,6 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(FeatureSummary)
-include(ECMPoQmTools)
 include(ECMSetupVersion)
 include(ECMGenerateQmlTypes)
 include(CMakePackageConfigHelpers)
@@ -43,7 +42,7 @@ configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/MauiKitAccountsConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/MauiKitAccountsConfig.cmake"
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR}
-    PATH_VARS KF5_INCLUDE_INSTALL_DIR CMAKE_INSTALL_PREFIX
+    PATH_VARS CMAKE_INSTALL_PREFIX
 )
 
 install(FILES
@@ -72,13 +71,11 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
 if(ANDROID)
     find_package(Qt5 REQUIRED COMPONENTS AndroidExtras)
     find_package(Gradle REQUIRED)
-elseif(UNIX)
-    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS Config)
 endif()
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} COMPONENTS Core Quick Sql Network REQUIRED)
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
-find_package(MauiKit)
+find_package(MauiKit REQUIRED)
 
 if(QUICK_COMPILER)
         find_package(Qt5QuickCompiler)
