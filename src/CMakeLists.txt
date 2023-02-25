@@ -32,17 +32,22 @@ ecm_generate_qmltypes(org.mauikit.accounts ${PROJECT_VERSION} DESTINATION ${KDE_
 add_library(
     MauiKitAccounts
     SHARED
-    ${sources} 
+    ${sources}
     ${accounts_QML_QRC}
 )
-   
+
 add_library(MauiKit::Accounts ALIAS MauiKitAccounts)
 
 generate_export_header(MauiKitAccounts BASE_NAME Accounts)
+set_target_properties(MauiKitAccounts PROPERTIES
+    VERSION ${Accounts_VERSION_STRING}
+    SOVERSION ${Accounts_SOVERSION}
+    EXPORT_NAME Accounts
+    )
 
 target_include_directories(MauiKitAccounts
     INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/MauiKit/Accounts>")
-    
+
 target_include_directories(MauiKitAccounts PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR};${CMAKE_CURRENT_BINARY_DIR};>")
 
 if(ANDROID)
@@ -51,7 +56,7 @@ endif()
 
 target_link_libraries(
     MauiKitAccounts
-       
+
     PRIVATE
         Qt5::Core
         Qt5::Quick
@@ -65,7 +70,7 @@ target_link_libraries(
 install(TARGETS MauiKitAccounts EXPORT MauiKitAccountsTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
-    ${headers} 
+    ${headers}
     ${CMAKE_CURRENT_BINARY_DIR}/accounts_export.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/MauiKit/Accounts
     COMPONENT Devel)
