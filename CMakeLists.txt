@@ -17,7 +17,7 @@ set(CMAKE_AUTORCC ON)
 
 set(AUTOMOC_MOC_OPTIONS -Muri=org.mauikit.accounts)
 
-project(Accounts LANGUAGES CXX VERSION 2.2.2)
+project(Accounts LANGUAGES CXX VERSION 3.0.0)
 
 find_package(ECM ${KF5_VERSION} NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
@@ -56,7 +56,7 @@ install(FILES
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         FILE MauiKitAccountsTargets.cmake
         NAMESPACE MauiKit::)
-        
+
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX Accounts
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/accounts_version.h"
@@ -87,7 +87,7 @@ endif()
 
     add_definitions(-DTRANSLATION_DOMAIN="mauikitaccounts")
     ki18n_install(po)
-        
+
 add_subdirectory(src)
 
     file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
