@@ -16,17 +16,18 @@ public:
     
 private:
     void initializeEngine(QQmlEngine *engine, const char *uri) override;
-    
+    QUrl componentUrl(const QString &fileName) const;
+
     QString resolveFileUrl(const QString &filePath) const
     {
-        #if defined(Q_OS_ANDROID)
+#if defined(Q_OS_ANDROID)
         return QStringLiteral("qrc:/android_rcc_bundle/qml/org/mauikit/accounts/") + filePath;
-        #else
-        #ifdef QUICK_COMPILER
+#else
+#ifdef QUICK_COMPILER
         return QStringLiteral("qrc:/mauikit/accounts/") + filePath;
-        #else
+#else
         return baseUrl().toString() + QLatin1Char('/') + filePath;
-        #endif
-        #endif
+#endif
+#endif
     }
 };

@@ -1,6 +1,4 @@
-#ifndef ACCOUNTSDB_H
-#define ACCOUNTSDB_H
-
+#pragma once
 #include <QObject>
 
 #include <QDebug>
@@ -17,7 +15,7 @@
 #include <QStringList>
 #include <QVariantMap>
 
-#include <MauiKit/Core/fmh.h>
+#include <MauiKit3/Core/fmh.h>
 
 class AccountsDB : public QObject
 {
@@ -42,8 +40,4 @@ public:
     bool update(const QString &table, const QString &column, const QVariant &newValue, const QVariant &op, const QString &id);
     bool remove(const QString &tableName, const FMH::MODEL &removeData);
 
-signals:
-
-public slots:
 };
-#endif // ACCOUNTSDB_H
