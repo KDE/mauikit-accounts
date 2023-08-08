@@ -69,6 +69,9 @@ target_link_libraries(MauiKitAccounts${MAUI_MAJOR_VERSION}
     KF${KF_MAJOR_VERSION}::I18n
     MauiKit${MAUI_MAJOR_VERSION})
 
+ecm_finalize_qml_module(MauiKitAccounts${MAUI_MAJOR_VERSION} DESTINATION ${KDE_INSTALL_QMLDIR})
+ecm_generate_qmltypes(org.mauikit.accounts 3.0 DESTINATION ${KDE_INSTALL_QMLDIR}/org/mauikit/accounts)
+
 install(TARGETS MauiKitAccounts${MAUI_MAJOR_VERSION} EXPORT MauiKitAccounts${MAUI_MAJOR_VERSION}Targets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES

@@ -20,7 +20,7 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-import org.mauikit.controls 1.2 as Maui
+import org.mauikit.controls 1.3 as Maui
 
 /**
  * SyncDialog
@@ -32,17 +32,14 @@ import org.mauikit.controls 1.2 as Maui
  *
  *
  */
-Maui.Dialog
+Maui.PopupPage
 {
     id: control
 
-    acceptButton.text: i18nd("mauikitaccounts","Sign in")
-    rejectButton.text: i18nd("mauikitaccounts","Cancel")
-    rejectButton.visible: false
-    page.margins: Maui.Style.space.medium
-    page.title: i18nd("mauikitaccounts","New Account")
-    page.showTitle: false
-    spacing: Maui.Style.defaultSpacing
+    maxWidth: 350
+
+    title: i18nd("mauikitaccounts","New Account")
+    //    page.showTitle: false
     
     /**
       * customServer : bool
@@ -64,18 +61,21 @@ Maui.Dialog
       */
     property alias passwordField: passwordField
 
-    footBar.visible: false
-//     maxHeight: 350
-    maxWidth: 350
 
-    actions: Action
-    {
-        text: i18nd("mauikitaccounts","Sign up")
-        enabled: !customServer
-        onTriggered: Qt.openUrlExternally("https://www.opendesktop.org/register")
-    }
+    actions: [
+        Action
+        {
+            text: i18nd("mauikitaccounts","Sign up")
+            enabled: !customServer
+            onTriggered: Qt.openUrlExternally("https://www.opendesktop.org/register")
+        },
 
-    onRejected:	close()
+        Action
+        {
+            text: i18nd("mauikitaccounts","Sign in")
+        }
+    ]
+
 
     Image
     {
@@ -118,7 +118,7 @@ Maui.Dialog
     {
         id: passwordField
         Layout.fillWidth: true
-        placeholderText: i18nd("mauikitaccounts","Password")       
+        placeholderText: i18nd("mauikitaccounts","Password")
         inputMethodHints: Qt.ImhNoAutoUppercase
     }
 
@@ -140,4 +140,5 @@ Maui.Dialog
         text: customServer ? i18nd("mauikitaccounts","opendesktop") : i18nd("mauikitaccounts","Custom server")
         onClicked: customServer = !customServer
     }
+
 }

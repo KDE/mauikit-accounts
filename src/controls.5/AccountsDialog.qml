@@ -6,15 +6,14 @@ import QtQuick.Layouts 1.3
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.accounts 1.0 as MA
 
-Maui.Dialog
+Maui.PopupPage
 {
     id: control
 
     maxHeight: 350
     maxWidth: maxHeight
-    footBar.visible: false
-    page.title: i18nd("mauikitaccounts","Accounts")
-    page.showTitle: false
+    //    footBar.visible: false
+    title: i18nd("mauikitaccounts","Accounts")
 
     /**
       *
@@ -36,26 +35,26 @@ Maui.Dialog
         }
     }
 
-    rejectButton.visible: false
-    acceptButton.text: i18nd("mauikitaccounts","Add")
-    onAccepted: _syncDialog.open()
-
-    headBar.rightContent: ToolButton
+    actions: Action
     {
-        icon.name: "documentinfo"
-        onClicked: Qt.openUrlExternally("https://mauikit.org/cloud")
+        text: i18nd("mauikitaccounts","Add")
+        onTriggered: _syncDialog.open()
     }
 
-    Maui.Dialog
+    //    headBar.rightContent: ToolButton
+    //    {
+    //        icon.name: "documentinfo"
+    //        onClicked: Qt.openUrlExternally("https://mauikit.org/cloud")
+    //    }
+
+    Maui.InfoDialog
     {
         id: _removeDialog
 
-        maxWidth: 400
         title: i18nd("mauikitaccounts","Remove Account")
         message: i18nd("mauikitaccounts","Are you sure you want to remove this account?")
-        page.margins: control.page.margins
 
-        rejectButton.text: i18nd("mauikitaccounts","Delete Account")
+        //        rejectButton.text: i18nd("mauikitaccounts","Delete Account")
         // 			rejectButton.visible: false
 
         onRejected:
@@ -67,16 +66,16 @@ Maui.Dialog
         }
 
 
-        footBar.rightContent: Button
-        {
-            text: i18nd("mauikitaccounts","Delete Account and Files")
-            onClicked:
-            {
-                var account = MA.Accounts.get(_listView.currentIndex)
-                control.removeAccountAndFiles(account.server, account.user)
-                close()
-            }
-        }
+        //        footBar.rightContent: Button
+        //        {
+        //            text: i18nd("mauikitaccounts","Delete Account and Files")
+        //            onClicked:
+        //            {
+        //                var account = MA.Accounts.get(_listView.currentIndex)
+        //                control.removeAccountAndFiles(account.server, account.user)
+        //                close()
+        //            }
+        //        }
     }
 
     Menu
@@ -97,6 +96,7 @@ Maui.Dialog
         id: _listView
         Layout.fillHeight: true
         Layout.fillWidth: true
+
         model: Maui.BaseModel
         {
             id: _syncingModel
@@ -125,7 +125,7 @@ Maui.Dialog
 
             onRightClicked:
             {
-                _listView.currentIndex = index                
+                _listView.currentIndex = index
                 _menu.popup()
             }
         }
@@ -150,12 +150,12 @@ Maui.Dialog
     function removeAccount(server, user)
     {
         if(server.length && user.length)
-              MA.Accounts.removeAccount(server, user)
+            MA.Accounts.removeAccount(server, user)
     }
 
     function removeAccountAndFiles(server, user)
     {
         if(server.length && user.length)
-             MA.Accounts.removeAccountAndFiles(server, user)
+            MA.Accounts.removeAccountAndFiles(server, user)
     }
 }
