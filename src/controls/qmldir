@@ -1,4 +1,0 @@
-module org.mauikit.accounts
-plugin MauiKitAccounts
-classname AccountsPlugin
-typeinfo plugins.qmltypes

@@ -24,7 +24,7 @@ AccountsDB::AccountsDB(QObject *parent)
         collectionDBPath_dir.mkpath(".");
 
     this->name = QUuid::createUuid().toString();
-    if (!FMH::fileExists(DBPath.toLocalFile())) {
+    if (!FMH::fileExists(DBPath)) {
         this->openDB(this->name);
         this->prepareCollectionDB();
     } else
@@ -160,7 +160,7 @@ bool AccountsDB::insert(const QString &tableName, const QVariantMap &insertData)
     query.prepare(sqlQueryString);
 
     int k = 0;
-    foreach (const QVariant &value, values)
+    for (const QVariant &value : values)
         query.bindValue(k++, value);
 
     return query.exec();

@@ -16,10 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef MAUIACCOUNTS_H
-#define MAUIACCOUNTS_H
+#pragma once
 
-#include <MauiKit/Core/mauilist.h>
+#include <MauiKit3/Core/mauilist.h>
 #include "accounts_export.h"
 
 /**
@@ -85,7 +84,7 @@ public:
      */
     QVariantMap get(const int &index) const;
 
-public slots:
+public Q_SLOTS:
     /**
      * @brief getCloudAccountsList
      * @return
@@ -139,7 +138,7 @@ private:
 
     QVariantList get(const QString &queryTxt);
 
-signals:
+Q_SIGNALS:
     /**
      * @brief accountAdded
      * @param account
@@ -164,5 +163,3 @@ signals:
      */
     void currentAccountIndexChanged(int index);
 };
-
-#endif // MAUIACCOUNTS_H

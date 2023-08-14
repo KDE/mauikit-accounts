@@ -42,12 +42,12 @@ const FMH::MODEL_LIST &MauiAccounts::items() const
 
 void MauiAccounts::setAccounts()
 {
-    emit this->preListChanged();
+    Q_EMIT this->preListChanged();
     this->m_data = this->getCloudAccounts();
     qDebug() << "ACCOUNTS LIST" << this->m_data;
 
-    emit this->countChanged();
-    emit this->postListChanged();
+    Q_EMIT this->countChanged();
+    Q_EMIT this->postListChanged();
 }
 
 FMH::MODEL_LIST MauiAccounts::getCloudAccounts()
@@ -73,7 +73,7 @@ bool MauiAccounts::addCloudAccount(const QString &server, const QString &user, c
     const QVariantMap account = {{FMH::MODEL_NAME[FMH::MODEL_KEY::SERVER], server}, {FMH::MODEL_NAME[FMH::MODEL_KEY::USER], user}, {FMH::MODEL_NAME[FMH::MODEL_KEY::PASSWORD], password}};
 
     if (this->db->insert("cloud", account)) {
-        emit this->accountAdded(account);
+        Q_EMIT this->accountAdded(account);
         return true;
     }
 
@@ -88,7 +88,7 @@ bool MauiAccounts::removeCloudAccount(const QString &server, const QString &user
     };
 
     if (this->db->remove("cloud", account)) {
-        emit this->accountRemoved(FMH::toMap(account));
+        Q_EMIT this->accountRemoved(FMH::toMap(account));
         return true;
     }
 
@@ -151,8 +151,8 @@ void MauiAccounts::setCurrentAccountIndex(const int &index)
     this->m_currentAccountIndex = index;
     this->m_currentAccount = FMH::toMap(this->m_data.at(m_currentAccountIndex));
 
-    emit this->currentAccountChanged(this->m_currentAccount);
-    emit this->currentAccountIndexChanged(this->m_currentAccountIndex);
+    Q_EMIT this->currentAccountChanged(this->m_currentAccount);
+    Q_EMIT this->currentAccountIndexChanged(this->m_currentAccountIndex);
 }
 
 QVariantList MauiAccounts::getCloudAccountsList()
