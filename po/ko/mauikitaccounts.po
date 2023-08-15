@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-11 00:44+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-07-26 00:38+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,47 +17,37 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 22.12.3\n"
 
-#: src/controls/AccountsDialog.qml:16 src/controls/AccountsMenuItem.qml:78
+#: src/controls.5/AccountsDialog.qml:16 src/controls.5/AccountsMenuItem.qml:78
 #, kde-format
 msgid "Accounts"
 msgstr "계정"
 
-#: src/controls/AccountsDialog.qml:40
+#: src/controls.5/AccountsDialog.qml:40
 #, kde-format
 msgid "Add"
 msgstr "추가"
 
-#: src/controls/AccountsDialog.qml:54
+#: src/controls.5/AccountsDialog.qml:54
 #, kde-format
 msgid "Remove Account"
 msgstr "계정 삭제"
 
-#: src/controls/AccountsDialog.qml:55
+#: src/controls.5/AccountsDialog.qml:55
 #, kde-format
 msgid "Are you sure you want to remove this account?"
 msgstr "이 계정을 삭제하시겠습니까?"
 
-#: src/controls/AccountsDialog.qml:58
-#, kde-format
-msgid "Delete Account"
-msgstr "계정 삭제"
-
-#: src/controls/AccountsDialog.qml:72
-#, kde-format
-msgid "Delete Account and Files"
-msgstr "계정과 파일 삭제"
-
-#: src/controls/AccountsDialog.qml:88
+#: src/controls.5/AccountsDialog.qml:87
 #, kde-format
 msgid "Remove..."
 msgstr "삭제..."
 
-#: src/controls/AccountsDialog.qml:139
+#: src/controls.5/AccountsDialog.qml:139
 #, kde-format
 msgid "No accounts yet!"
 msgstr "계정이 없습니다!"
 
-#: src/controls/AccountsDialog.qml:140
+#: src/controls.5/AccountsDialog.qml:140
 #, kde-format
 msgid ""
 "Start adding new accounts to sync your files, music, contacts, images, "
@@ -65,47 +55,51 @@ msgid ""
 msgstr ""
 "파일, 음악, 연락처, 그림, 메모 등을 동기화하려면 새 계정을 추가하십시오"
 
-#: src/controls/CredentialsDialog.qml:39
-#, kde-format
-msgid "Sign in"
-msgstr "로그인"
-
-#: src/controls/CredentialsDialog.qml:40
-#, kde-format
-msgid "Cancel"
-msgstr "취소"
-
-#: src/controls/CredentialsDialog.qml:43
+#: src/controls.5/CredentialsDialog.qml:41
 #, kde-format
 msgid "New Account"
 msgstr "새 계정"
 
-#: src/controls/CredentialsDialog.qml:73
+#: src/controls.5/CredentialsDialog.qml:68
 #, kde-format
 msgid "Sign up"
 msgstr "가입"
 
-#: src/controls/CredentialsDialog.qml:112
+#: src/controls.5/CredentialsDialog.qml:75
+#, kde-format
+msgid "Sign in"
+msgstr "로그인"
+
+#: src/controls.5/CredentialsDialog.qml:112
 #, kde-format
 msgid "Username"
 msgstr "사용자 이름"
 
-#: src/controls/CredentialsDialog.qml:121
+#: src/controls.5/CredentialsDialog.qml:121
 #, kde-format
 msgid "Password"
 msgstr "암호"
 
-#: src/controls/CredentialsDialog.qml:131
+#: src/controls.5/CredentialsDialog.qml:131
 #, kde-format
 msgid "Server address"
 msgstr "서버 주소"
 
-#: src/controls/CredentialsDialog.qml:140
+#: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "opendesktop"
 msgstr "opendesktop"
 
-#: src/controls/CredentialsDialog.qml:140
+#: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "Custom server"
 msgstr "사용자 정의 서버"
+
+#~ msgid "Delete Account"
+#~ msgstr "계정 삭제"
+
+#~ msgid "Delete Account and Files"
+#~ msgstr "계정과 파일 삭제"
+
+#~ msgid "Cancel"
+#~ msgstr "취소"

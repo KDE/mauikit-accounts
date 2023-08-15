@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-11 00:44+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-01-04 20:52+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -18,47 +18,37 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 22.12.0\n"
 
-#: src/controls/AccountsDialog.qml:16 src/controls/AccountsMenuItem.qml:78
+#: src/controls.5/AccountsDialog.qml:16 src/controls.5/AccountsMenuItem.qml:78
 #, kde-format
 msgid "Accounts"
 msgstr "Konta"
 
-#: src/controls/AccountsDialog.qml:40
+#: src/controls.5/AccountsDialog.qml:40
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
 
-#: src/controls/AccountsDialog.qml:54
+#: src/controls.5/AccountsDialog.qml:54
 #, kde-format
 msgid "Remove Account"
 msgstr "Usuń konto"
 
-#: src/controls/AccountsDialog.qml:55
+#: src/controls.5/AccountsDialog.qml:55
 #, kde-format
 msgid "Are you sure you want to remove this account?"
 msgstr "Czy na pewno usunąć to konto?"
 
-#: src/controls/AccountsDialog.qml:58
-#, kde-format
-msgid "Delete Account"
-msgstr "Usuń konto"
-
-#: src/controls/AccountsDialog.qml:72
-#, kde-format
-msgid "Delete Account and Files"
-msgstr "Usuń konto i pliki"
-
-#: src/controls/AccountsDialog.qml:88
+#: src/controls.5/AccountsDialog.qml:87
 #, kde-format
 msgid "Remove..."
 msgstr "Usuń..."
 
-#: src/controls/AccountsDialog.qml:139
+#: src/controls.5/AccountsDialog.qml:139
 #, kde-format
 msgid "No accounts yet!"
 msgstr "Nie dodano jeszcze żadnego konta!"
 
-#: src/controls/AccountsDialog.qml:140
+#: src/controls.5/AccountsDialog.qml:140
 #, kde-format
 msgid ""
 "Start adding new accounts to sync your files, music, contacts, images, "
@@ -67,47 +57,51 @@ msgstr ""
 "Dodaj swoje konto, aby móc synchronizować swoje pliki, muzykę, kontakty, "
 "obrazy, zapiski, itp..."
 
-#: src/controls/CredentialsDialog.qml:39
-#, kde-format
-msgid "Sign in"
-msgstr "Zapisz się"
-
-#: src/controls/CredentialsDialog.qml:40
-#, kde-format
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: src/controls/CredentialsDialog.qml:43
+#: src/controls.5/CredentialsDialog.qml:41
 #, kde-format
 msgid "New Account"
 msgstr "Nowe konto"
 
-#: src/controls/CredentialsDialog.qml:73
+#: src/controls.5/CredentialsDialog.qml:68
 #, kde-format
 msgid "Sign up"
 msgstr "Wejdź"
 
-#: src/controls/CredentialsDialog.qml:112
+#: src/controls.5/CredentialsDialog.qml:75
+#, kde-format
+msgid "Sign in"
+msgstr "Zapisz się"
+
+#: src/controls.5/CredentialsDialog.qml:112
 #, kde-format
 msgid "Username"
 msgstr "Nazwa użytkownika"
 
-#: src/controls/CredentialsDialog.qml:121
+#: src/controls.5/CredentialsDialog.qml:121
 #, kde-format
 msgid "Password"
 msgstr "Hasło"
 
-#: src/controls/CredentialsDialog.qml:131
+#: src/controls.5/CredentialsDialog.qml:131
 #, kde-format
 msgid "Server address"
 msgstr "Adres serwera"
 
-#: src/controls/CredentialsDialog.qml:140
+#: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "opendesktop"
 msgstr "opendesktop"
 
-#: src/controls/CredentialsDialog.qml:140
+#: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "Custom server"
 msgstr "Własny serwer"
+
+#~ msgid "Delete Account"
+#~ msgstr "Usuń konto"
+
+#~ msgid "Delete Account and Files"
+#~ msgstr "Usuń konto i pliki"
+
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
