@@ -93,12 +93,3 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Vlastní server"
-
-#~ msgid "Delete Account"
-#~ msgstr "Smazat účet"
-
-#~ msgid "Delete Account and Files"
-#~ msgstr "Smazat účet a soubory"
-
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
