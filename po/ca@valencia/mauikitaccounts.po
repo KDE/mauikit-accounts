@@ -98,12 +98,3 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Servidor personalitzat"
-
-#~ msgid "Delete Account"
-#~ msgstr "Suprimix el compte"
-
-#~ msgid "Delete Account and Files"
-#~ msgstr "Suprimix el compte i els fitxers"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
