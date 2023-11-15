@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:29+0000\n"
-"PO-Revision-Date: 2023-11-08 15:49-0300\n"
+"PO-Revision-Date: 2023-11-14 12:11-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -54,46 +54,48 @@ msgid ""
 "Start adding new accounts to sync your files, music, contacts, images, "
 "notes, etc..."
 msgstr ""
+"Comece adicionando novas contas para sincronizar seus arquivos, músicas, "
+"contatos, imagens, notas, etc..."
 
 #: src/controls.5/CredentialsDialog.qml:41
 #, kde-format
 msgid "New Account"
-msgstr ""
+msgstr "Nova conta"
 
 #: src/controls.5/CredentialsDialog.qml:68
 #, kde-format
 msgid "Sign up"
-msgstr ""
+msgstr "Assinar"
 
 #: src/controls.5/CredentialsDialog.qml:75
 #, kde-format
 msgid "Sign in"
-msgstr ""
+msgstr "Entrar"
 
 #: src/controls.5/CredentialsDialog.qml:112
 #, kde-format
 msgid "Username"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: src/controls.5/CredentialsDialog.qml:121
 #, kde-format
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
 #: src/controls.5/CredentialsDialog.qml:131
 #, kde-format
 msgid "Server address"
-msgstr ""
+msgstr "Endereço do servidor"
 
 #: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "opendesktop"
-msgstr ""
+msgstr "opendesktop"
 
 #: src/controls.5/CredentialsDialog.qml:140
 #, kde-format
 msgid "Custom server"
-msgstr ""
+msgstr "Servidor personalizado"
 
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
