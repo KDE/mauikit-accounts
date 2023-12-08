@@ -10,10 +10,12 @@ set(sources
     code/accounts_plugin.cpp
     code/mauiaccounts.cpp
     code/accountsdb.cpp
+    code/moduleinfo.cpp
     code/accounts.qrc)
 
 set(headers
     code/mauiaccounts.h
+    code/moduleinfo.h
     code/accountsdb.h)
 
 if(QT_MAJOR_VERSION STREQUAL "5")

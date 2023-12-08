@@ -62,11 +62,12 @@ include(ECMGenerateQmlTypes)
 include(ECMGenerateHeaders)
 include(ECMFindQmlModule)
 include(ECMQmlModule)
+include(ECMSourceVersionControl)
 
 option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
 
 if(ANDROID)
-    find_package(Qt5 REQUIRED COMPONENTS AndroidExtras)
+    find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS AndroidExtras)
     find_package(Gradle REQUIRED)
 endif()
 
@@ -80,7 +81,7 @@ find_package(KF${KF_MAJOR_VERSION} ${REQUIRED_KF_VERSION} REQUIRED COMPONENTS
     I18n
     CoreAddons)
 
-find_package(MauiKit${MAUI_MAJOR_VERSION} ${MAUIKIT_VERSION})
+find_package(MauiKit${MAUI_MAJOR_VERSION} ${MAUIKIT_VERSION} REQUIRED)
 
 if (QT_MAJOR_VERSION STREQUAL "5")
     if(QUICK_COMPILER)
@@ -89,6 +90,28 @@ if (QT_MAJOR_VERSION STREQUAL "5")
             DESCRIPTION "Compile QML at build time"
             TYPE OPTIONAL)
     endif()
+endif()
+
+if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
+    execute_process(
+        COMMAND git rev-parse --abbrev-ref HEAD
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        OUTPUT_VARIABLE GIT_BRANCH
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+    # Get the latest abbreviated commit hash of the working branch
+    execute_process(
+        COMMAND git log -1 --format=%h
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        OUTPUT_VARIABLE GIT_COMMIT_HASH
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+    add_definitions(-DGIT_COMMIT_HASH="${GIT_COMMIT_HASH}")
+    add_definitions(-DGIT_BRANCH="${GIT_BRANCH}")
+
+else()
+    add_definitions(-DGIT_COMMIT_HASH="${PROJECT_VERSION}")
+    add_definitions(-DGIT_BRANCH="Stable")
 endif()
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/MauiKitAccounts${MAUI_MAJOR_VERSION}")

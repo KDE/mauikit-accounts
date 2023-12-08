@@ -15,7 +15,11 @@
 #include <QStringList>
 #include <QVariantMap>
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <MauiKit3/Core/fmh.h>
+#else
+#include <MauiKit4/Core/fmh.h>
+#endif
 
 class AccountsDB : public QObject
 {
@@ -39,5 +43,4 @@ public:
     bool update(const QString &tableName, const FMH::MODEL &updateData, const QVariantMap &where);
     bool update(const QString &table, const QString &column, const QVariant &newValue, const QVariant &op, const QString &id);
     bool remove(const QString &tableName, const FMH::MODEL &removeData);
-
 };

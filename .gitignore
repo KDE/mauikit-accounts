@@ -1,4 +1,7 @@
 .directory
+build/
+build.5/
+build.6/
 
 *.*~
 ~*.*

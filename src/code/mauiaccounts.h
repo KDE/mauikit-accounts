@@ -18,18 +18,20 @@
 
 #pragma once
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <MauiKit3/Core/mauilist.h>
+#else
+#include <MauiKit4/Core/mauilist.h>
+#endif
+
 #include "accounts_export.h"
 
-/**
- * MauiAccounts
- * provides an interface to access the system registered accounts,
- * the current active account and a bridge to add account data to the host system backend solution.
- * This properties and functions are exposed to
- * all the Maui Applications that might want to use the accounts
- */
-
 class AccountsDB;
+
+/**
+ * @brief MauiAccounts class provides an interface to access the system registered accounts, the current active account and a bridge to add account data to the host system backend solution.
+ * This properties and functions are exposed to all the Maui Applications that might want to use the accounts with the `Accounts` property.
+ */
 class ACCOUNTS_EXPORT MauiAccounts : public MauiList
 {
     Q_OBJECT

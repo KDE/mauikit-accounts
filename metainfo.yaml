@@ -1,11 +1,47 @@
-# SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
-#
-# SPDX-License-Identifier: BSD-2-Clause
-description: MauiKit QtQuick plugins for handling accounts
-maintainer: camiloh
-type: functional
+maintainer: milohr
+fancyname: MauiKit Accounts
+description: QtQuick plugin for online accounts management
 platforms:
     - name: Linux
+    - name: FreeBSD
+    - name: Android
+    - name: iOS
+      note: maintainer needed
+    - name: Windows
+      note: maintainer needed
+    - name: macOS
+      note: maintainer needed
 public_lib: true
 deprecated: false
-release: false
+type: functional
+release: true
+logo: logo.png
+irc: '#kde-maui'
+mailinglist: '' # do we have one?
+group: mauikit
+qdoc: false
+public_doc_dir:
+    - docs
+public_source_dirs:  # optional, default to src, must be a list
+  - src/code
+  - src/controls.6
+public_example_dirs: examples
+libraries:
+    - cmake: MauiKit4::Accounts
+cmakename: MauiKitAccounts4
+
+group_info:
+    name: mauikit
+    fancyname: MauiKit Frameworks
+    maintainer: milohr
+    mailinglist: '' # doesn't exist?
+    platforms:
+      - Linux
+      - FreeBSD (partial)
+      - Windows (unmantained)
+      - macOS (unmantained)
+      - Android
+    description: Provides utilities to build applications according to the Maui style
+    long_description:
+        - The MauiKit Framework is build on top of the KDE frameworks and provides tools for building
+          convergent applications according to the Maui guidelines.
