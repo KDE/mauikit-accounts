@@ -10,9 +10,15 @@ Maui.ApplicationWindow
 
     Maui.Page
     {
+        id: _page
         anchors.fill: parent
 
         Maui.Controls.showCSD: true
+        headBar.rightContent: Switch
+        {
+            checked: _page.altHeader
+            onToggled: _page.altHeader = !_page.altHeader
+        }
 
         headBar.leftContent: Maui.ToolButtonMenu
         {
@@ -27,6 +33,13 @@ Maui.ApplicationWindow
                 onTriggered: root.about()
             }
         }
+
+        Rectangle
+        {
+            color: "pink"
+            anchors.fill: parent
+        }
+
     }
 }
 
