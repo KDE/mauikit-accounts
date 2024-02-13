@@ -4,7 +4,9 @@
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
-ecm_add_qml_module(MauiKitAccounts${MAUI_MAJOR_VERSION} URI "org.mauikit.accounts" CLASSNAME AccountsPlugin)
+ecm_add_qml_module(MauiKitAccounts${MAUI_MAJOR_VERSION}
+URI "org.mauikit.accounts"
+CLASS_NAME AccountsPlugin)
 
 set(sources
     code/accounts_plugin.cpp
