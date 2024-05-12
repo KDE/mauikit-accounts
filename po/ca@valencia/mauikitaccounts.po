@@ -43,7 +43,7 @@ msgstr "Segur que voleu eliminar este compte?"
 #: src/controls.5/AccountsDialog.qml:87 src/controls.6/AccountsDialog.qml:82
 #, kde-format
 msgid "Remove..."
-msgstr "Elimina..."
+msgstr "Elimina…"
 
 #: src/controls.5/AccountsDialog.qml:139 src/controls.6/AccountsDialog.qml:132
 #, kde-format
