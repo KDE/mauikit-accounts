@@ -5,8 +5,8 @@
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
 ecm_add_qml_module(MauiKitAccounts${MAUI_MAJOR_VERSION}
-URI "org.mauikit.accounts"
-CLASS_NAME AccountsPlugin)
+    URI "org.mauikit.accounts"
+    CLASS_NAME AccountsPlugin)
 
 set(sources
     code/accounts_plugin.cpp
@@ -20,13 +20,7 @@ set(headers
     code/moduleinfo.h
     code/accountsdb.h)
 
-if(QT_MAJOR_VERSION STREQUAL "5")
-    if(QUICK_COMPILER)
-        qtquick_compiler_add_resources(accounts_QML_QRC resources.qrc)
-    else()
-        qt5_add_resources(accounts_QML_QRC resources.qrc)
-    endif()
-endif()
+# qt_add_resources(accounts_QML_QRC resources.qrc)
 
 ecm_target_qml_sources(MauiKitAccounts${MAUI_MAJOR_VERSION} SOURCES
     controls.${QT_MAJOR_VERSION}/AccountsDialog.qml
@@ -38,15 +32,6 @@ target_sources(MauiKitAccounts${MAUI_MAJOR_VERSION}
     ${sources})
 
 add_library(MauiKit${MAUI_MAJOR_VERSION}::Accounts ALIAS MauiKitAccounts${MAUI_MAJOR_VERSION})
-
-if (QT_MAJOR_VERSION STREQUAL "5")
-    if(QUICK_COMPILER)
-        target_sources(MauiKitAccounts${MAUI_MAJOR_VERSION} PRIVATE ${accounts_QML_QRC})
-
-        add_definitions(-DQUICK_COMPILER)
-        target_compile_definitions(MauiKitAccounts${MAUI_MAJOR_VERSION} PUBLIC QUICK_COMPILER)
-    endif()
-endif()
 
 generate_export_header(MauiKitAccounts${MAUI_MAJOR_VERSION} BASE_NAME Accounts)
 set_target_properties(MauiKitAccounts${MAUI_MAJOR_VERSION} PROPERTIES
@@ -74,7 +59,6 @@ target_link_libraries(MauiKitAccounts${MAUI_MAJOR_VERSION}
     MauiKit${MAUI_MAJOR_VERSION})
 
 ecm_finalize_qml_module(MauiKitAccounts${MAUI_MAJOR_VERSION} DESTINATION ${KDE_INSTALL_QMLDIR})
-ecm_generate_qmltypes(org.mauikit.accounts 3.0 DESTINATION ${KDE_INSTALL_QMLDIR}/org/mauikit/accounts)
 
 install(TARGETS MauiKitAccounts${MAUI_MAJOR_VERSION} EXPORT MauiKitAccounts${MAUI_MAJOR_VERSION}Targets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
