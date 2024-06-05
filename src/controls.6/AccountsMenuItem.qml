@@ -21,8 +21,8 @@ import QtQuick
 import QtQuick.Controls 
 import QtQuick.Layouts 
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.accounts 1.0 as MA
+import org.mauikit.controls as Maui
+import org.mauikit.accounts as MA
 
 /**
  * @inherit QtQuick.Controls.MenuItem
