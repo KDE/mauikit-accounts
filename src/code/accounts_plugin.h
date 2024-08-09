@@ -21,13 +21,9 @@ private:
     QString resolveFileUrl(const QString &filePath) const
     {
 #if defined(Q_OS_ANDROID)
-        return QStringLiteral("qrc:/android_rcc_bundle/qml/org/mauikit/accounts/") + filePath;
-#else
-#ifdef QUICK_COMPILER
-        return QStringLiteral("qrc:/mauikit/accounts/") + filePath;
-#else
+        return QStringLiteral(":/qt/qml/org/mauikit/accounts/") + filePath;
+#else        
         return baseUrl().toString() + QLatin1Char('/') + filePath;
-#endif
 #endif
     }
 };

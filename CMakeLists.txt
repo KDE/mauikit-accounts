@@ -45,7 +45,6 @@ include(ECMQmlModule)
 include(ECMSourceVersionControl)
 
 if(ANDROID)
-    find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS AndroidExtras)
     find_package(Gradle REQUIRED)
 endif()
 

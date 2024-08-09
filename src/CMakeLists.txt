@@ -44,10 +44,6 @@ target_include_directories(MauiKitAccounts${MAUI_MAJOR_VERSION}
 
 target_include_directories(MauiKitAccounts${MAUI_MAJOR_VERSION} PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR};${CMAKE_CURRENT_BINARY_DIR};>")
 
-if(ANDROID)
-    target_link_libraries(MauiKitAccounts${MAUI_MAJOR_VERSION} PRIVATE Qt${QT_MAJOR_VERSION}::AndroidExtras)
-endif()
-
 target_link_libraries(MauiKitAccounts${MAUI_MAJOR_VERSION}
     PRIVATE
     Qt${QT_MAJOR_VERSION}::Core
