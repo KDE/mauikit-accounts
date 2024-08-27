@@ -19,11 +19,7 @@
 #pragma once
 #include <QObject>
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <MauiKit3/Core/mauilist.h>
-#else
 #include <MauiKit4/Core/mauilist.h>
-#endif
 
 #include "accounts_export.h"
 
