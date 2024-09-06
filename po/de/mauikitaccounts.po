@@ -6,7 +6,7 @@
 # Automatically generated, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: mauikit-accounts\n"
+"Project-Id-Version: mauikitaccounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-06 01:47+0000\n"
 "PO-Revision-Date: 2023-03-12 16:35+0100\n"
