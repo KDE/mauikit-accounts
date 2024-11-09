@@ -1,0 +1,97 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the mauikit-accounts package.
+#
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: mauikit-accounts\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"PO-Revision-Date: 2024-11-08 09:13+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.08.1\n"
+
+#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
+#, kde-format
+msgid "Accounts"
+msgstr "חשבונות"
+
+#: src/controls.6/AccountsDialog.qml:53
+#, kde-format
+msgid "Add"
+msgstr "הוספה"
+
+#: src/controls.6/AccountsDialog.qml:61
+#, kde-format
+msgid "Remove Account"
+msgstr "הסרת חשבון"
+
+#: src/controls.6/AccountsDialog.qml:62
+#, kde-format
+msgid "Are you sure you want to remove this account?"
+msgstr "להסיר את החשבון הזה?"
+
+#: src/controls.6/AccountsDialog.qml:82
+#, kde-format
+msgid "Remove..."
+msgstr "הסרה…"
+
+#: src/controls.6/AccountsDialog.qml:132
+#, kde-format
+msgid "No accounts yet!"
+msgstr "אין חשבונות עדיין!"
+
+#: src/controls.6/AccountsDialog.qml:133
+#, kde-format
+msgid ""
+"Start adding new accounts to sync your files, music, contacts, images, "
+"notes, etc..."
+msgstr ""
+"אפשר להתחיל בהוספת חשבון כדי לסנכרן את הקבצים, המוזיקה, אנשי הקשר, התמונות, "
+"הפתקיות שלך ועוד…"
+
+#: src/controls.6/CredentialsDialog.qml:41
+#, kde-format
+msgid "New Account"
+msgstr "חשבון חדש"
+
+#: src/controls.6/CredentialsDialog.qml:68
+#, kde-format
+msgid "Sign up"
+msgstr "הרשמה"
+
+#: src/controls.6/CredentialsDialog.qml:75
+#, kde-format
+msgid "Sign in"
+msgstr "כניסה"
+
+#: src/controls.6/CredentialsDialog.qml:117
+#, kde-format
+msgid "Username"
+msgstr "שם משתמש"
+
+#: src/controls.6/CredentialsDialog.qml:126
+#, kde-format
+msgid "Password"
+msgstr "סיסמה"
+
+#: src/controls.6/CredentialsDialog.qml:135
+#, kde-format
+msgid "Server address"
+msgstr "כתובת השרת"
+
+#: src/controls.6/CredentialsDialog.qml:144
+#, kde-format
+msgid "opendesktop"
+msgstr "opendesktop"
+
+#: src/controls.6/CredentialsDialog.qml:144
+#, kde-format
+msgid "Custom server"
+msgstr "שרת מותאם אישית"
