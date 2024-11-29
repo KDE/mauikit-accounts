@@ -110,7 +110,7 @@ Maui.PopupPage
         font.pointSize: Maui.Style.fontSizes.big
     }
     
-    TextField
+    Maui.TextField
     {
         id: _userField
         Layout.fillWidth: true
@@ -126,7 +126,7 @@ Maui.PopupPage
         placeholderText: i18nd("mauikitaccounts","Password")
     }
     
-    TextField
+    Maui.TextField
     {
         id: _serverField
         visible: customServer
