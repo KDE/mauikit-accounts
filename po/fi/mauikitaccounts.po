@@ -15,7 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
 
 #: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
