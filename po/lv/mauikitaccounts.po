@@ -1,0 +1,98 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the mauikit-accounts package.
+#
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: mauikit-accounts\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"PO-Revision-Date: 2025-02-03 16:51+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
+#, kde-format
+msgid "Accounts"
+msgstr "Konti"
+
+#: src/controls.6/AccountsDialog.qml:53
+#, kde-format
+msgid "Add"
+msgstr "Pievienot"
+
+#: src/controls.6/AccountsDialog.qml:61
+#, kde-format
+msgid "Remove Account"
+msgstr "Noņemt kontu"
+
+#: src/controls.6/AccountsDialog.qml:62
+#, kde-format
+msgid "Are you sure you want to remove this account?"
+msgstr "Vai tiešām vēlaties noņemt šo kontu?"
+
+#: src/controls.6/AccountsDialog.qml:82
+#, kde-format
+msgid "Remove..."
+msgstr "Noņemt..."
+
+#: src/controls.6/AccountsDialog.qml:132
+#, kde-format
+msgid "No accounts yet!"
+msgstr "Vēl nav neviena konta!"
+
+#: src/controls.6/AccountsDialog.qml:133
+#, kde-format
+msgid ""
+"Start adding new accounts to sync your files, music, contacts, images, "
+"notes, etc..."
+msgstr ""
+"Pievienojiet jaunus kontus, lai sinhronizētu datnes, mūziku, kontaktus, "
+"attēlus, piezīmes u.c..."
+
+#: src/controls.6/CredentialsDialog.qml:41
+#, kde-format
+msgid "New Account"
+msgstr "Jauns konts"
+
+#: src/controls.6/CredentialsDialog.qml:68
+#, kde-format
+msgid "Sign up"
+msgstr "Reģistrēties"
+
+#: src/controls.6/CredentialsDialog.qml:75
+#, kde-format
+msgid "Sign in"
+msgstr "Ierakstīties"
+
+#: src/controls.6/CredentialsDialog.qml:117
+#, kde-format
+msgid "Username"
+msgstr "Lietotājvārds"
+
+#: src/controls.6/CredentialsDialog.qml:126
+#, kde-format
+msgid "Password"
+msgstr "Parole"
+
+#: src/controls.6/CredentialsDialog.qml:135
+#, kde-format
+msgid "Server address"
+msgstr "Servera adrese"
+
+#: src/controls.6/CredentialsDialog.qml:144
+#, kde-format
+msgid "opendesktop"
+msgstr "opendesktop"
+
+#: src/controls.6/CredentialsDialog.qml:144
+#, kde-format
+msgid "Custom server"
+msgstr "Pielāgots serveris"
