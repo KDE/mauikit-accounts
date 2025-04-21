@@ -24,7 +24,7 @@ Maui.PopupPage
     maxHeight: 350
     maxWidth: maxHeight
 
-    title: i18nd("mauikitaccounts","Accounts")
+    // title: i18nd("mauikitaccounts","Accounts")
 
     /**
       * @brief Alias to the MauiKit BaseModel handling the data

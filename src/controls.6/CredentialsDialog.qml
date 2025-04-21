@@ -38,7 +38,7 @@ Maui.PopupPage
     
     maxWidth: 350
     
-    title: i18nd("mauikitaccounts","New Account")
+    // title: i18nd("mauikitaccounts","New Account")
     
     /**
      * @brief customServer : bool
