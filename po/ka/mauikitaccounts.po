@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2022-11-25 23:41+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -17,11 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.2\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "ანგარიშები"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -57,10 +52,10 @@ msgstr ""
 "დაიწყეთ ახალი ანგარიშები დამატება თქვენი ფაილების, მუსიკის, კონტაქტების და ა."
 "შ. სინქრონიზაციისთვის..."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "ახალი ანგარიში"
+msgid "Accounts"
+msgstr "ანგარიშები"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -96,6 +91,9 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "ხელით მითითებული სერვერი"
+
+#~ msgid "New Account"
+#~ msgstr "ახალი ანგარიში"
 
 #~ msgid "Delete Account"
 #~ msgstr "ანგარიშის წაშლა"

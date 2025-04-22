@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2022-11-12 09:02+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -17,11 +17,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Lokalize 22.08.1\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Računi"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -57,10 +52,10 @@ msgstr ""
 "Začni dodajanje novih računov za sinhronizacijo vaših datotek, glasbe, "
 "stikov, slik, beležk, itd..."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Nov račun"
+msgid "Accounts"
+msgstr "Računi"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -96,6 +91,9 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Strežnik po meri"
+
+#~ msgid "New Account"
+#~ msgstr "Nov račun"
 
 #~ msgid "Delete Account"
 #~ msgstr "Zbriši račun"

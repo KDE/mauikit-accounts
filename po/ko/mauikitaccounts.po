@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2023-07-26 00:38+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -16,11 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 22.12.3\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "계정"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -55,10 +50,10 @@ msgid ""
 msgstr ""
 "파일, 음악, 연락처, 그림, 메모 등을 동기화하려면 새 계정을 추가하십시오"
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "새 계정"
+msgid "Accounts"
+msgstr "계정"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -94,6 +89,9 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "사용자 정의 서버"
+
+#~ msgid "New Account"
+#~ msgstr "새 계정"
 
 #~ msgid "Delete Account"
 #~ msgstr "계정 삭제"

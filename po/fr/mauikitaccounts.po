@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2024-04-26 11:36+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -13,11 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 23.08.5\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Comptes"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -53,10 +48,10 @@ msgstr ""
 "Démarrage de l'ajout de nouveaux comptes pour synchroniser vos fichiers, "
 "votre musique, vos contacts, vos images, vos notes, etc."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Nouveau compte"
+msgid "Accounts"
+msgstr "Comptes"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -92,6 +87,9 @@ msgstr "OpenDesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Serveur personnalisé"
+
+#~ msgid "New Account"
+#~ msgstr "Nouveau compte"
 
 #~ msgid "Delete Account"
 #~ msgstr "Supprimer un compte"

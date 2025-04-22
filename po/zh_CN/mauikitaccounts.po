@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2024-04-22 16:06\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -16,11 +16,6 @@ msgstr ""
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf6-trunk/messages/mauikit-accounts/mauikitaccounts.pot\n"
 "X-Crowdin-File-ID: 56942\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr ""
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -54,9 +49,9 @@ msgid ""
 "notes, etc..."
 msgstr ""
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
+msgid "Accounts"
 msgstr ""
 
 #: src/controls.6/CredentialsDialog.qml:68

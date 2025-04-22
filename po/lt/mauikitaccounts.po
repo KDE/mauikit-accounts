@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2025-01-14 00:21+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,11 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Poedit 3.5\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Paskyros"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -58,10 +53,10 @@ msgstr ""
 "Pridėkite naujų paskyrų norėdami sinchronizuoti failus, muziką, adresatus, "
 "paveikslus, užrašus ir kt..."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Nauja paskyra"
+msgid "Accounts"
+msgstr "Paskyros"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -97,3 +92,6 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Tinkintas serveris"
+
+#~ msgid "New Account"
+#~ msgstr "Nauja paskyra"

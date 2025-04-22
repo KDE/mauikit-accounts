@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2023-02-07 23:35+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -16,11 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 23.03.70\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "帳號"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -54,10 +49,10 @@ msgid ""
 "notes, etc..."
 msgstr "開始新增帳號來同步您的檔案、音樂、聯絡人、影像、筆記等等…"
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "新增帳號"
+msgid "Accounts"
+msgstr "帳號"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -93,6 +88,9 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "自訂伺服器"
+
+#~ msgid "New Account"
+#~ msgstr "新增帳號"
 
 #~ msgid "Delete Account"
 #~ msgstr "刪除帳號"

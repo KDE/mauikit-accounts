@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2025-02-03 16:51+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -17,11 +17,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 "X-Generator: Lokalize 24.12.1\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Konti"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -57,10 +52,10 @@ msgstr ""
 "Pievienojiet jaunus kontus, lai sinhronizētu datnes, mūziku, kontaktus, "
 "attēlus, piezīmes u.c..."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Jauns konts"
+msgid "Accounts"
+msgstr "Konti"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -96,3 +91,6 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Pielāgots serveris"
+
+#~ msgid "New Account"
+#~ msgstr "Jauns konts"

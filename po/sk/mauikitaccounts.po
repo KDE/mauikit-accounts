@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikitaccounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2023-03-12 11:25+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -14,11 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Účty"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -52,10 +47,10 @@ msgid ""
 "notes, etc..."
 msgstr ""
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Nový účet"
+msgid "Accounts"
+msgstr "Účty"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -91,6 +86,9 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr ""
+
+#~ msgid "New Account"
+#~ msgstr "Nový účet"
 
 #~ msgid "Delete Account"
 #~ msgstr "Odstrániť účet"

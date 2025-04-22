@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mauikit-accounts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2025-04-22 00:40+0000\n"
 "PO-Revision-Date: 2022-11-11 13:24+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -18,11 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.12.0\n"
-
-#: src/controls.6/AccountsDialog.qml:27 src/controls.6/AccountsMenuItem.qml:100
-#, kde-format
-msgid "Accounts"
-msgstr "Comptes"
 
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
@@ -59,10 +54,10 @@ msgstr ""
 "Comenceu afegint comptes nous per a sincronitzar els vostres fitxers, "
 "música, contactes, imatges, notes, etc."
 
-#: src/controls.6/CredentialsDialog.qml:41
+#: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
-msgid "New Account"
-msgstr "Compte nou"
+msgid "Accounts"
+msgstr "Comptes"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
@@ -98,3 +93,6 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Servidor personalitzat"
+
+#~ msgid "New Account"
+#~ msgstr "Compte nou"
