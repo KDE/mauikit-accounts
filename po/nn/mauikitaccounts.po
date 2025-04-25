@@ -92,6 +92,3 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Sjølvvalt tenar"
-
-#~ msgid "New Account"
-#~ msgstr "Ny konto"
