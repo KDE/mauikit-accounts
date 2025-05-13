@@ -88,6 +88,3 @@ msgstr "opendesktop"
 #, kde-format
 msgid "Custom server"
 msgstr "Vlastní server"
-
-#~ msgid "New Account"
-#~ msgstr "Nový účet"
