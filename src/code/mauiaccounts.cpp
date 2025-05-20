@@ -54,7 +54,8 @@ FMH::MODEL_LIST MauiAccounts::getCloudAccounts()
 {
     auto accounts = this->get("select * from cloud");
     FMH::MODEL_LIST res;
-    for (const auto &account : qAsConst(accounts)) {
+    for (const auto &account : std::as_const(accounts))
+    {
         auto map = account.toMap();
         /*{FMH::MODEL_KEY::PATH, FMH::PATHTYPE_URI[FMH::PATHTYPE_KEY::CLOUD_PATH] + map[FMH::MODEL_NAME[FMH::MODEL_KEY::USER]].toString()},*/
         /*  {FMH::MODEL_KEY::TYPE, FMH::PATHTYPE_LABEL[FMH::PATHTYPE_KEY::CLOUD_PATH]}*/
