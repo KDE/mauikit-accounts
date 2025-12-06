@@ -20,71 +20,71 @@ msgstr ""
 #: src/controls.6/AccountsDialog.qml:53
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: src/controls.6/AccountsDialog.qml:61
 #, kde-format
 msgid "Remove Account"
-msgstr ""
+msgstr "移除账户"
 
 #: src/controls.6/AccountsDialog.qml:62
 #, kde-format
 msgid "Are you sure you want to remove this account?"
-msgstr ""
+msgstr "您确定要移除此帐户吗？"
 
 #: src/controls.6/AccountsDialog.qml:82
 #, kde-format
 msgid "Remove..."
-msgstr ""
+msgstr "移除..."
 
 #: src/controls.6/AccountsDialog.qml:132
 #, kde-format
 msgid "No accounts yet!"
-msgstr ""
+msgstr "尚未添加任何账户!"
 
 #: src/controls.6/AccountsDialog.qml:133
 #, kde-format
 msgid ""
 "Start adding new accounts to sync your files, music, contacts, images, "
 "notes, etc..."
-msgstr ""
+msgstr "开始添加新账户，以同步您的文件、音乐、联系人、图片、笔记等..."
 
 #: src/controls.6/AccountsMenuItem.qml:100
 #, kde-format
 msgid "Accounts"
-msgstr ""
+msgstr "账户"
 
 #: src/controls.6/CredentialsDialog.qml:68
 #, kde-format
 msgid "Sign up"
-msgstr ""
+msgstr "注册"
 
 #: src/controls.6/CredentialsDialog.qml:75
 #, kde-format
 msgid "Sign in"
-msgstr ""
+msgstr "登录"
 
 #: src/controls.6/CredentialsDialog.qml:117
 #, kde-format
 msgid "Username"
-msgstr ""
+msgstr "用户名"
 
 #: src/controls.6/CredentialsDialog.qml:126
 #, kde-format
 msgid "Password"
-msgstr ""
+msgstr "密码"
 
 #: src/controls.6/CredentialsDialog.qml:135
 #, kde-format
 msgid "Server address"
-msgstr ""
+msgstr "服务器地址"
 
 #: src/controls.6/CredentialsDialog.qml:144
 #, kde-format
 msgid "opendesktop"
-msgstr ""
+msgstr "opendesktop"
 
 #: src/controls.6/CredentialsDialog.qml:144
 #, kde-format
 msgid "Custom server"
-msgstr ""
+msgstr "自定义服务器"
