@@ -28,7 +28,7 @@ msgstr "Odstrániť účet"
 #: src/controls.6/AccountsDialog.qml:62
 #, kde-format
 msgid "Are you sure you want to remove this account?"
-msgstr "Ste si istý, you want to remove this account?"
+msgstr "Naozaj chcete odstrániť tento účet?"
 
 #: src/controls.6/AccountsDialog.qml:82
 #, kde-format
